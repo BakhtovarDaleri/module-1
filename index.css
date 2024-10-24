@@ -1,0 +1,295 @@
+body {
+  font-family: "Raleway", Courier, monospace;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.head-container {
+  background: linear-gradient(to bottom, #1b1b1b 75%, white 25%);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+.head-container h1 {
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 170px;
+  padding-top: 111px;
+  color: #fff;
+}
+.head-container p {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  color: #f5f5f5;
+  margin-bottom: 62px;
+  text-align: center;
+}
+.head-container img {
+  margin-bottom: 30px;
+}
+.iphone-body h2 {
+  height: 166px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #000;
+}
+.iphone-body p {
+  width: 967px;
+  height: 210px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 37px;
+  color: #262525;
+  margin-left: 265px;
+  margin-bottom: 14px;
+}
+.btn {
+  width: 241px;
+  height: 36px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 104px;
+}
+.section-wrapper {
+  width: 100%;
+  background: linear-gradient(to top, #1b1b1b 70%, white 30%);
+}
+.phone-body {
+  width: 1261px;
+  height: 624px;
+  background-image: url(./resources/iphone-body.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 91px;
+  margin-left: 115px;
+}
+.iphone-body-text-wrapper {
+  width: 841;
+  height: 387px;
+  color: white;
+  padding-left: 155px;
+}
+.iphone-body-text-wrapper h2 {
+  width: 711px;
+  height: 166px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  padding-left: 110px;
+}
+.iphone-body-text-wrapper h3 {
+  width: 820px;
+  height: 85px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #f5f5f5;
+  padding-left: 65px;
+}
+.iphone-body-text-wrapper p {
+  width: 941px;
+  height: 88px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #7a7a7a;
+}
+
+.cards-iphone {
+  width: 100%;
+  height: 1021px;
+  background: linear-gradient(to bottom, white 90%, #1b1b1b 10%);
+}
+.cards-block {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-left: 50px;
+}
+.next-card {
+  width: 64px;
+  height: 64px;
+  color: #000;
+  border: none;
+}
+.cards-iphone h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #292929;
+  margin-top: 78px;
+  margin-bottom: 57px;
+}
+.card {
+  width: 384px;
+  height: 655px;
+  border-radius: 30px;
+  background-color: #1b1b1b;
+}
+.card h3,
+.text,
+.price {
+  margin-left: 24px;
+  text-align: left;
+  color: white;
+}
+.price {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 5px;
+}
+.text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+button {
+  width: 336px;
+  height: 66px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #000;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7a7a7a;
+}
+
+.video-review {
+  width: 100%;
+  height: 836px;
+  display: block;
+  background: linear-gradient(to bottom, #1b1b1b 100%, white 0%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+.video-review h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 38px;
+  padding-top: 70px;
+  margin-bottom: 28px;
+  color: #fff;
+}
+.video-review p {
+  width: 607px;
+  height: 75px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #f5f5f5;
+  margin-bottom: 55px;
+  margin-left: 435px;
+}
+.section {
+  width: 100%;
+  height: 506px;
+  display: flex;
+}
+.section img {
+  width: 674px;
+  height: 320px;
+  margin-top: 93px;
+  margin-left: 120px;
+}
+.contact {
+  width: 419px;
+  height: 145px;
+  margin-top: 180px;
+  margin-left: 80px;
+}
+.contact p {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  color: #727272;
+  margin-bottom: 32px;
+  text-align: left;
+}
+.email-form {
+  display: flex;
+  align-items: ;
+}
+.contact input {
+  width: 100%;
+  height: 65px;
+  border-radius: 32px;
+  border: 1px solid #c8c8c8;
+  padding-left: 20px;
+}
+.footer {
+  width: 100%;
+  height: 343px;
+  background-color: #1d1c1c;
+  display: flex;
+}
+.footer-text {
+  width: 320px;
+  height: 164px;
+  margin-top: 84px;
+  margin-left: 105px;
+  text-align: left;
+}
+.footer-text h4 {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 14px;
+}
+.footer-text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #c8c8c8;
+  letter-spacing: 2%;
+  margin-bottom: 32px;
+}
+.footer-container {
+  width: 588px;
+  height: 207px;
+  margin-top: 68px;
+  margin-right: 98px;
+  display: flex;
+  margin-left: 405px;
+}
+.block-footer a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  color: #c8c8c8;
+  margin-bottom: 12px;
+}
+.block-footer a:hover {
+  color: rgb(182, 118, 40);
+}
+.block-footer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #efeeef;
+  margin-bottom: 32px;
+}
+.block-footer {
+  width: 160px;
+  height: 207px;
+  margin-right: 24px;
+}
+.block-footer input {
+  width: 220px;
+  height: 53px;
+  border: none;
+  border-radius: 32px;
+  background-color: #545454;
+  text-align: center;
+  color: #c8c8c8;
+}
