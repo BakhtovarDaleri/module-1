@@ -1,29 +1,38 @@
 let currentIndex = 0;
-const cards = document.querySelectorAll('.card');
-const totalCards = cards.length;
-const sliderWrapper = document.querySelector('.slider-wrapper');
+const cards = document.querySelector(".cards-block");
+const totalCards = document.querySelectorAll(".card").length;
+const cardWidth = document.querySelector(".card").offsetWidth; // Ширина одной карточки
 
-document.querySelector('.next-card').addEventListener('click', () => {
-  if (currentIndex < totalCards - 1) {
-    currentIndex++;
-  } else {
-    currentIndex = 0; // возвращаемся к первой карточке
+// Функция для смены слайда
+function changeSlide(direction) {
+  currentIndex += direction;
+
+  // Если индекс выходит за пределы, возвращаем в начало или конец
+  if (currentIndex < 0) {
+    currentIndex = totalCards - 1;
+  } else if (currentIndex >= totalCards) {
+    currentIndex = 0;
   }
-  updateSlider();
-});
 
-document.querySelector('.prev-card').addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-  } else {
-    currentIndex = totalCards - 1; // возвращаемся к последней карточке
-  }
   updateSlider();
-});
-
-function updateSlider() {
-  const offset = -currentIndex * 408; // 384px ширина карточки + 24px отступ
-  sliderWrapper.style.transform = translateX(${offset}px);
 }
 
-updateSlider(); // для начальной позиции
+// Функция для переключения на текущий слайд по индикатору
+function currentSlide(index) {
+  currentIndex = index;
+  updateSlider();
+}
+
+// Обновление слайдера
+function updateSlider() {
+  cards.style.transform = `translateX(${-cardWidth * currentIndex}px)`;
+
+  // Обновление активного индикатора
+  const dots = document.querySelectorAll(".dot");
+  dots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentIndex);
+  });
+}
+
+// Инициализация - показываем первый слайд
+updateSlider();

@@ -51,31 +51,39 @@
 
     <div class="cards-iphone">
       <h2>Выбери свой айфон</h2>
-      <div class="cards-block">
-        <button class="next-card"><</button>
 
-        <div class="card">
-          <img src="./resources/iphone-silver.png" alt="" />
-          <h3>Iphone 13 pro</h3>
-          <p class="text">Silver</p>
-          <p class="price">130 000 P</p>
-          <button>Добавить в корзину</button>
+      <div class="slider-wrapper">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="cards-block">
+          <div class="card">
+            <img src="./resources/iphone-silver.png" alt="" />
+            <h3>Iphone 13 pro</h3>
+            <p class="text">Silver</p>
+            <p class="price">130 000 P</p>
+            <button>Добавить в корзину</button>
+          </div>
+          <div class="card">
+            <img src="./resources/iphone-blue.jpg" alt="" />
+            <h3>Iphone 13 pro</h3>
+            <p class="text">Blue</p>
+            <p class="price">98 000 P</p>
+            <button>Добавить в корзину</button>
+          </div>
+          <div class="card">
+            <img src="./resources/iphone-green.jpg" alt="" />
+            <h3>Iphone 13 pro</h3>
+            <p class="text">Green</p>
+            <p class="price">102 000 P</p>
+            <button>Добавить в корзину</button>
+          </div>
         </div>
-        <div class="card">
-          <img src="./resources/iphone-blue.jpg" alt="" />
-          <h3>Iphone 13 pro</h3>
-          <p class="text">Blue</p>
-          <p class="price">98 000 P</p>
-          <button>Добавить в корзину</button>
-        </div>
-        <div class="card">
-          <img src="./resources/iphone-green.jpg" alt="" />
-          <h3>Iphone 13 pro</h3>
-          <p class="text">Green</p>
-          <p class="price">102 000 P</p>
-          <button>Добавить в корзину</button>
-        </div>
-        <button class="next-card">></button>
+
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </div>
 
